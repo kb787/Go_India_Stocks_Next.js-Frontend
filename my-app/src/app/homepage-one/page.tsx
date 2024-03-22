@@ -23,13 +23,13 @@ const HomepageOne = () => {
     setCurrentTab(tabName);
   };
   return (
-    <div className="flex flex-col min-h-screen w-max bg-white">
+    <div className="flex flex-col min-h-screen greater-mid-xs:w-full greater-2xl-xs:w-full lg:w-full xl:w-full bg-white">
       <Tabs handleDisplayTab={handleTabClick} currentTab={currentTab} />
-      <div className="min-xs:hidden min-xs-g:hidden mid-xs:hidden higher-mid-xs:hidden sm:hidden md:hidden greater-mid-xs:flex greater-mid-xs:w-max greater-2xl-xs:flex greater-2xl-xs:w-max lg:flex lg:w-max xl:flex xl:w-max">
+      <div className="min-xs:hidden min-xs-g:hidden mid-xs:hidden higher-mid-xs:hidden sm:hidden md:hidden greater-mid-xs:flex greater-mid-xs:w-full greater-2xl-xs:flex greater-2xl-xs:w-full lg:flex lg:w-full xl:flex xl:w-full">
         <Card1 />
         <Card2 />
       </div>
-      <div className="min-xs:flex min-xs-g:flex mid-xs:flex higher-mid-xs:flex sm:flex md:flex greater-mid-xs:hidden greater-2xl-xs:hidden lg:hidden xl:hidden">
+      <div className="min-xs:flex min-xs:w-full min-xs-g:flex min-xs-g:w-full mid-xs:flex mid-xs:w-full higher-mid-xs:flex higher-mid-xs:w-full sm:flex sm:w-full md:flex md:w-full greater-2xl-xs:hidden lg:hidden xl:hidden">
         {renderTabContent()}
       </div>
     </div>
